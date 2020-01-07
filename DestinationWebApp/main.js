@@ -16,7 +16,6 @@ const $venueDivs = [$("#venue1"), $("#venue2"), $("#venue3"), $("#venue4")];
 const $weatherDiv = $("#weather1");
 const weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-// Add AJAX functions here:
 const getVenues = async () => {
     const city = $input.val();
     const urlToFetch = `${url}${city}&limit=10&client_id=${clientId}&client_secret=${clientSecret}&v=20191218`;
@@ -53,7 +52,6 @@ const getForecast = async () => {
 // Render functions
 const renderVenues = (venues) => {
     $venueDivs.forEach(($venue, index) => {
-        // Add your code here:
         const venue = venues[index];
         const venueIcon = venue.categories[0].icon;
         const venueImgSrc = `${venueIcon.prefix}bg_64${venueIcon.suffix}`;
