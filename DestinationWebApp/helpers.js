@@ -1,3 +1,4 @@
+//HTML Organization Helper Doc
 const createVenueHTML = (name, location, iconSource) => {
     return `<h2>${name}</h2>
   <img class="venueimage" src="${iconSource}"/>
